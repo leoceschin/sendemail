@@ -1,5 +1,5 @@
 # Microserviço de envio de e-mail
-Este é um microserviço de envio de e-mail utlizando o SMTP do Gmail.
+Este é um microserviço de envio de e-mail utlizando o SMTP do Gmail e o RabbitMq para comunicação.
 
 ## Configuração
 O arquvo /src/main/resources/application.properties deve estar configurado da seguinte maneira:
@@ -17,6 +17,9 @@ spring.mail.username={endereço de email}
 spring.mail.password={senha de 16 dígitos gerado na área de segurança do Gmail}
 spring.mail.properties.mail.smtp.auth=true
 spring.mail.properties.mail.smtp.starttls.enable=true
+
+spring.rabbitmq.addresses={endereço fornecido pelo RabbitMQ "ampqs://..."}
+spring.rabbitmq.queue={um nome de sua preferência}
 ```
 
 ## Envio

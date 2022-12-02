@@ -19,6 +19,8 @@ public class EmailDto {
     private String text;
 
     
+    public EmailDto() {
+    }
 
     public String getOwnerRef() {
         return ownerRef;
